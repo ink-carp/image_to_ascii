@@ -59,7 +59,7 @@ pub mod func{
         let text_dir = Path::new("/home/chenzhangtao/文档/text");
         let total = image_name.len();
         for (index,name) in image_name.iter().enumerate(){
-            print!("{index}/{total}");
+            println!("生成文本中，请稍等:{index}/{total}");
             print!("\x1b[2J");
             print!("\x1b[H");
             //将图片内容处理成字符串后返回并写入文本文件中
